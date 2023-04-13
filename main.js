@@ -1,6 +1,8 @@
 const btn1 = document.querySelector(".btn1");
 const btn2 = document.querySelector(".btn2");
-
+const btnUpdate = document.getElementById("choose-avatar-button");
+const btnsub = document.querySelector("#btnupdate");
+const btncheck = document.querySelector("#my-form button[type='submit']");
 
 btn1.addEventListener('click', function(){
     var content = document.getElementById("left-content");
@@ -19,3 +21,7 @@ btn2.addEventListener('click', function(){
         nav.classList.add("open")
     }
 })
+
+
+
+

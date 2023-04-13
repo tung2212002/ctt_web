@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main2.css">
+    <title>Thay đổi thông tin</title>
+</head>
+<body>
+    <div style="padding: 5px; background-color: rgba(255, 0, 0, 0.4); position: fixed; width: 100%; z-index: 9999; top: 0px; left: 0px;">
+    </div>
+    <div id="content">
+        <div id="right-content">
+            <div id="mainContent">
+                <h3>CHỈNH SỬA THÔNG TIN CÁ NHÂN</h3>
+                <hr>
+            </div>
+
+            <form name="change" id="my-form" action="index.html" method="post">
+
+                <div class="infor">
+                    <span>THÔNG TIN SINH VIÊN</span>
+                    <hr>
+                    <div class="infor-detail">
+                        <div class="img">
+                            <img src=".\icon\avata.png" alt="">
+                            <div class = "MSSV form">
+                                <p class = "MSSV "><strong>MSSV:</strong><input type="number" value="20204619" ><p><button type="button" id="choose-avatar-button" >Update</button></p>
+                            </div>
+                        </div>
+                        <div class="col1-infor col form">
+                            <label>Họ và tên&emsp;: </label><br><input type="text" value="Ong Thế Tùng" id="name"><br>
+                            <label>Năm vào trường&emsp;: </label><br><input type="number" value="2020"><br>
+                            <label>Bậc đào tạo&emsp;: </label><br><input type="text" value="Đại học đại trà"><br>
+                            <label>Chương trình&emsp;: </label><br><input type="text" value="Khoa học máy tính 2020"><br>
+                            <label>Khoa/Viện quản lý &emsp;: </label><br><input type="text" value="Trường Công nghệ Thông tin và Truyền thông"></><br>
+                            <label>Tình trạng học tập&emsp;: </label><br><input type="text" value="Học"><br>
+                        </div>
+                        <div class="col2-infor col form">
+                            <label>Giới tính&emsp;: </label><br>
+                                <select name="sex"><option value="nam">Nam</option><option value="nu">Nữ</option></select><br>
+                            <label>Lớp&emsp;: </label><br><input type="text" value="Khoa học Máy tính 06-K65"><br>
+                            <label>Khóa học&emsp;: </label><br><input type="number" value="65"><br>
+                            <label>Email&emsp;: </label><br><input for="email" value="tung.ot204619@sis.hust.edu.vn"><br>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="study">
+                    <span>THÔNG TIN HỌC TẬP</span>
+                    <hr>
+                    <div class="study-detail">
+                        <div class="col1-study col form">
+                            <label>Tổng kết học kỳ&emsp;: </label><br><input type="text" value="20212"><br>
+                            <label>Trung bình tích lũy&emsp;: </label><br><input type="text" value="0.00"><br>
+                            <label>Số tín chỉ nợ đăng ký&emsp;: </label><br><input type="number" value="0"><br>
+                        
+                        </div>
+                        <div class="col2-study col form">
+                            <label>Số tín chỉ tích lũy&emsp;: </label><br><input type="number" value="64"><br>
+                            <label>Trình độ sinh viên&emsp;: </label><br><input type="number" value="3"><br>
+                            <label>Mức cảnh báo&emsp;: </label><br><input type="text" value="M0"><br>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="study">
+                    <span>THÔNG TIN CÁ NHÂN</span>
+                    <hr>
+                    <div class="study-detail">
+                        <div class="col1-study col form">
+                            <label>Dân tộc&emsp;: </label><br><input type="text" value="KINH"><br>
+                            <label>Năm TN cấp 3&emsp;: </label><br><input type="number" value="2020"><br>
+                            <label>Địa chỉ&emsp;: </label><br><input type="text" value="CẢNH THỤY, HUYỆN YÊN DŨNG, TỈNH BẮC GIAN"><br>
+                            <label>Số CMTND&emsp;: </label><br><input type="text" value="122450533"><br>
+                            <label>Nơi cấp&emsp;: </label><br><input type="text" value="BẮC GIANG"><br>
+                            <label>Họ tên bố&emsp;: </label><br><input type="text"><br>
+                            <label>Năm sinh&emsp;: </label><br><input type="text"><br>
+                            <label>Nghề nghiệp&emsp;: </label><br><input type="text"><br>
+                            <label>Điện thoại&emsp;: </label><br><input type="text"><br>
+                            <label>Email&emsp;: </label><br><input type="text"><br>
+                            
+                        </div>
+                        <div class="col2-study col form">
+                        
+                                <label>Tôn giáo&emsp;: </label><br><input type="text" value="KHÔNG"><br>
+                                <label>Trường THPT&emsp;: </label><br><input type="text" value="THPT YÊN DŨNG SỐ 1"><br>
+                                <label>Hộ khẩu&emsp;: </label><br><input type="text" value="XÃ CẢNH THỤY, HUYỆN YÊN DŨNG, TỈNH BẮC GIANG"><br>
+                                <label>Số điện thoại&emsp;: </label><br><input type="text"><br>
+                                <label>Họ tên mẹ&emsp;: </label><br><input type="text"><br>
+                                <label>Năm sinh&emsp;: </label><br><input type="text"><br>
+                                <label>Nghề nghiệp&emsp;: </label><br><input type="text"><br>
+                                <label>Điện thoại&emsp;: </label><br><input type="text"><br>
+                                <label>Email&emsp;: </label><br><input for="email"><br>
+                            </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                    <div class="btn-form form submit">
+                        <button type="submit" id="btnupdate" onclick="event.preventDefault(); alert('success')">OK</button>     
+                        <button id="btnhref" type="button"  onclick="window.location.href='index.html'">Cancel</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <input type="button" id = "test">
+    
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footerMain">
+                <div class="footerRight">
+                    <hr>
+                    <b>Trường Đại học Bách Khoa Hà Nội</b>
+                    <br>
+                    <br>
+                    <p>Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src=".\main.js"></script>
+
+</body>
+</html>

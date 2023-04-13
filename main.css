@@ -30,6 +30,7 @@ strong{
     font-size: 16px;
     line-height: 2em;
     color: #343434;
+    font-style: italic;
 }
 
 body{
@@ -234,8 +235,6 @@ ul{
     color: #fff;
 }
 
-.itemMenu .nav{
-}
 
 #topMenu .down{
     float: right;
@@ -343,6 +342,12 @@ ul{
 #left-content{
     width : 285px;
     min-width: 285px;
+}
+
+#left-content a:hover{
+    opacity: 0.6;
+    background-color: #dbe9f0;
+    color: #3d0a0a;
 }
 
 #content h3{
@@ -485,6 +490,17 @@ ul{
     line-height: 2em;
 }
 
+.infor #checkbox{
+    width: 30px;
+    margin-left: 30px;
+
+}
+
+.infor #checkbox:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
 #right-content>div{
     display: block;
 }
@@ -504,6 +520,10 @@ ul{
     display: flex;
 }
 
+.MSSV{
+    line-height: 40px;
+}
+
 .img{
     width: 25%;
     text-align: center;
@@ -520,6 +540,7 @@ ul{
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 4px;
+    box-shadow: 10px 10px 10px #807878;
 }
 .col1-infor{
     width: 33%;
@@ -565,7 +586,21 @@ ul{
     border-bottom: 1px solid #fff;
 }
 
+#mainContent h3{
+    color: red !important;
+}
 
+
+#right-content>div>span{
+    font: 14px Times;
+    font-weight: bold;
+    color: red !important;
+}
+
+.col span{
+    font-family: Times;
+    font-weight: bold;
+}
 
 .open{
     display: block !important;

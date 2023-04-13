@@ -1,0 +1,318 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    min-width: 320px;
+}
+
+a{
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+h3{
+    font: 16px 'Segoe UI','Helvetica Neue','Droid Sans',Arial,Tahoma,Geneva,Sans-serif;
+    font-weight: bold;
+}
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+label{
+    width: 700;
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    line-height: 2em;
+    color: #343434;
+    font-style: italic;
+    font-weight: bold;
+}
+
+body{
+    width: 100%;
+}
+
+
+@media(min-width:992px) and (max-width: 1199px){
+
+}
+
+@media(min-width:768px)and (max-width: 991px){
+
+#right-content{
+    width: 100%;
+}
+
+
+.col1-infor , .col2-infor{
+
+    padding: 0 30px 0 30px !important;
+}
+
+.col1-infor input , .col2-infor input{
+    width: 180px !important;
+}
+.img{
+    width: 100% !important;
+    margin-bottom: 20px;
+}
+
+
+}
+
+@media (max-width: 767px) and (min-width: 279px){
+
+.infor-detail{
+        display: block;
+}
+#topMenu{
+    width: 100%;
+}
+
+.infor-detail, .study-detail{
+    flex-direction: column;
+}
+
+.img{
+    width: 100% !important;
+    margin-bottom: 20px;
+}
+
+.form{
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.col input, .col select{
+    margin-top: -20px;
+    margin-bottom: -5px;
+}
+
+.btn-form{
+    width: 270px !important;
+}
+
+.submit{
+    flex-direction: row;
+}
+.col input{
+    width:220px !important;
+}
+}
+
+#content{
+    display: flex;
+    padding-top: 10px;
+    margin-top: 4px;
+}
+
+
+#content h3{
+    text-align: center;
+    margin: 10px 0 5px 0;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #8c1515;
+
+}
+
+
+#student h3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+#right-content{
+    flex:1;
+}
+
+#mainContent h3{
+    color: red;
+}
+
+#right-content>form>div>span{
+    font-family: 'Segoe UI'!important;
+    font-size: 16px !important;
+    font-weight: bold;
+    color: red !important; 
+    vertical-align: middle;
+    line-height: 2em !important;
+}
+
+
+#mainContent{
+    margin-left: 15px;
+}
+
+.infor{
+    width: 100%;
+}
+
+.infor h3{
+    float: left;
+    line-height: 2em;
+}
+
+.infor #checkbox{
+    width: 30px;
+    margin-left: 30px;
+
+}
+
+.infor #checkbox:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+#right-content>div{
+    display: block;
+}
+
+.infor hr, .study hr{
+    border: 3px solid #FF9900;
+    margin: 20px 0;
+    width: 100%;
+}
+
+#mainContent{
+    width: calc(100% - 30px)
+}
+
+.infor-detail{
+    width: 100%;
+    display: flex;
+}
+
+.MSSV{
+    line-height: 40px;
+}
+
+.img{
+    width: 25%;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.img img{
+    display: inline-block;
+    max-width: 100%;
+    max-width: 200px;
+    height: auto;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 10px 10px 10px #807878;
+}
+.col1-infor{
+    width: 33%;
+    padding: 0 50px;
+}
+
+.col2-infor{
+    width: 33%;
+    padding: 0 50px;
+}
+
+.study-detail{
+    width: 100%;
+    display: flex;
+}
+
+.col1-study , .col2-study{
+    width: 50%;
+    padding: 0 50px;
+}
+
+.footerMain{
+    width: 100%;
+    float: left;
+    background: url("	https://ctt-sis.hust.edu.vn/Content/Images/footer.jpg") no-repeat top;
+    height: 100px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+
+.footerRight{
+    width: 35%;
+    float: right;
+    text-align: right;
+    margin-right: 5%;
+    color: #fff;
+}
+
+.footerRight hr{
+    margin: 10px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #fff;
+}
+
+
+.col span{
+    font-family: Times;
+    font-weight: bold;
+}
+
+
+.btn-form{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 50px;
+
+}
+
+
+.btn-form button{
+    width: 100px;
+    border: 1px solid #fff;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: #ccc;
+    color: #000;
+    padding: 5px;
+}
+
+.btn-form button:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+
+input{
+    width: 320px;
+    height: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px 0 10px 10px;
+    font-size: 16px;
+    font-family: Times;
+}
+
+select{
+    padding: 5px;
+    margin: 2px 0 10px 10px;
+    width: 70px;
+}
+
+.MSSV input{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 100px;
+}
