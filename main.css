@@ -26,8 +26,7 @@ hr{
 
 strong{
     width: 700;
-    font-family: 'Arimo', sans-serif;
-    font-size: 16px;
+    font-family: 'Times', sans-serif;
     line-height: 2em;
     color: #343434;
     font-style: italic;
@@ -593,12 +592,13 @@ ul{
 
 #right-content>div>span{
     font: 14px Times;
-    font-weight: bold;
+    font-weight: bold ;
     color: red !important;
 }
 
 .col span{
-    font-family: Times;
+    font-family: Times !important;
+    font-size: 14px !important;
     font-weight: bold;
 }
 
