@@ -14,7 +14,7 @@ a{
 }
 
 h3{
-    font: 16px 'Segoe UI','Helvetica Neue','Droid Sans',Arial,Tahoma,Geneva,Sans-serif;
+    font: 14px Times;
     font-weight: bold;
 }
 hr{
@@ -45,6 +45,17 @@ ul{
 #headerContainer{
     width: 970px !important;
 }
+
+.btn-form{
+    margin: 0 auto;
+}
+
+.btn-form button{
+    margin-bottom: 0px !important;
+}
+input{
+    display: block ;
+}
 }
 
 @media(min-width:768px)and (max-width: 991px){
@@ -56,12 +67,24 @@ ul{
     flex-direction: column;
 }
 
-#right-content>div>div>div{
+#right-content>div>div>div>div{
+    width: 100%;
+}
+
+.myForm div>div>div{
     width: 100%;
 }
 
 #headerContainer{
     width: 750px !important;
+}
+
+.btn-form{
+    margin: 0 auto;
+}
+
+.btn-form button{
+    margin-bottom: 0px !important;
 }
 
 }
@@ -92,7 +115,7 @@ ul{
 }
 
     
-#right-content>div>div>div{
+#right-content>div>div>div>div{
     width: 100% !important;
 }
 
@@ -131,6 +154,22 @@ ul{
 
 .btn{
     display: block !important;
+}
+
+.btn-form{
+    margin: 0 auto;
+}
+
+.btn-form button{
+    margin-bottom: 0px !important;
+}
+
+.myForm div>div>div{
+    width: 100%;
+}
+
+input, select{
+    display: block;
 }
 
 }
@@ -470,10 +509,18 @@ ul{
 }
 
 #right-content span{
-    font-family: 'Arimo', sans-serif;
-    font-size: 16px;
+    font-family: Times;
+    font-size: 14px;
     line-height: 2em;
     color: #343434;
+}
+
+#right-content>div>div>span{
+    font-family: Times;
+    font-size: 14px;
+    color: red;
+    line-height: 2em;
+    font-weight: bold;
 }
 
 #mainContent{
@@ -500,14 +547,14 @@ ul{
     opacity: 0.6;
 }
 
-#right-content>div{
+.myInfor>div{
     display: block;
 }
 
 .infor hr, .study hr{
     border: 3px solid #FF9900;
     margin: 20px 0;
-    width: 80%;
+    width: 90%;
 }
 
 #mainContent{
@@ -591,15 +638,79 @@ ul{
 
 
 #right-content>div>span{
-    font: 14px Times;
-    font-weight: bold ;
+    font: 14px Times !important;
+    font-weight: bold !important;
     color: red !important;
 }
 
 .col span{
     font-family: Times !important;
-    font-size: 14px !important;
+    font-size: 16px !important;
     font-weight: bold;
+}
+
+form span{
+    font-weight: bold;
+    color: red !important;
+}
+
+.btn-form{
+    float: right;
+}
+
+.btn-form button{
+    border: none;
+    background: none;
+    font-size: 16px;
+    font-family: Times;
+    font-weight: 900;
+    margin: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+    opacity: 0.6;
+    color: red;
+}
+
+label{
+    font: 14px Times !important;
+    font-weight: bold !important;
+    font-style: italic !important;
+    line-height: 2em !important;
+
+}
+
+input, select{
+
+    width: 300px;
+    height: 1 ;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px 0 10px 10px;
+    font-size: 14px;
+    font-family: Times;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+#sex{
+    padding: 5px ;
+    margin: 2px 0 10px 10px;
+    width: 70px ;
+}
+
+
+.MSSV input{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 100px;
+    display: inline !important;
+}
+
+.study{
+    margin-top: 30px;
 }
 
 .open{
@@ -612,4 +723,28 @@ ul{
 
 .hidden{
     display: none !important;
+}
+
+input:disabled, select:disabled {
+    border: none;
+    background-color: transparent;
+    background-image: none;
+    appearance: none;
+    -webkit-appearance: none !important;
+    color: #000;
+    opacity: 1;
+    padding: 6px;
+    margin: 2px 0 10px 10px;
+}
+
+.MSSV input:disabled{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 100px;
+}
+
+.note span{
+    font-size: 18px!important;
+    color: black!important;
+    font-weight: 100!important;
 }
