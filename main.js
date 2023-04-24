@@ -231,7 +231,7 @@ function validator(formElement ,inputElements, rule){
                 }else{
                     var inputName = formElement.querySelector(`label[for="${inputElement.name}"]`);
                     inputName.style.color = 'black';
-                    inputElement.style.setProperty("border", "1px solid black");
+                    inputElement.style.setProperty("border", "1px solid none");
                 };
             };
             if(rule.selector==="#email"){
@@ -251,7 +251,7 @@ function validator(formElement ,inputElements, rule){
         inputElement.oninput = function(){
             var inputName = formElement.querySelector(`label[for="${inputElement.name}"]`);
             inputName.style.color = 'black';
-            inputElement.style.setProperty("border", "1px solid black");
+            inputElement.style.setProperty("border", "1px solid #ccc");
         };
 
         

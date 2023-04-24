@@ -726,7 +726,7 @@ input, select{
 }
 
 input:disabled, select:disabled {
-    border: none;
+    border: none !important;
     background-color: transparent;
     background-image: none;
     appearance: none;
