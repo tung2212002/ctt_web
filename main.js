@@ -176,6 +176,7 @@ var app={
     upTTSV : function(){
         myInput.forEach(function(input){
             input.value = ttsv[input.name];
+            input.classList.add('isrequired');
         });
 
         mySelect.forEach(function(select){
@@ -213,6 +214,98 @@ var app={
 }
 
 app.start();
+
+
+function validator(formElement ,inputElements, rule){
+    inputElements.forEach(function(inputElement){
+        // on blur
+        inputElement.onblur = function(){
+            var errorMessage = rule.test(inputElement.value);
+            var smallElement = formElement.querySelector(`small[for="${inputElement.name}"]`);
+
+            if(rule.selector===".isrequired"){
+                if(errorMessage){
+                    var inputName = formElement.querySelector(`label[for="${inputElement.name}"]`);
+                    inputName.style.color = 'red';
+                    inputElement.style.setProperty("border", "1px solid red");
+                }else{
+                    var inputName = formElement.querySelector(`label[for="${inputElement.name}"]`);
+                    inputName.style.color = 'black';
+                    inputElement.style.setProperty("border", "1px solid black");
+                };
+            };
+            if(rule.selector==="#email"){
+                if(errorMessage){
+                    var inputName = formElement.querySelector(`label[for="${inputElement.name}"]`);
+                    inputName.style.color = 'red';
+                    inputElement.style.setProperty("border", "1px solid red");
+                    smallElement.innerHTML = errorMessage;
+                }
+                else{
+                    smallElement.innerHTML = "";
+                }
+            }
+        }
+
+        // on input
+        inputElement.oninput = function(){
+            var inputName = formElement.querySelector(`label[for="${inputElement.name}"]`);
+            inputName.style.color = 'black';
+            inputElement.style.setProperty("border", "1px solid black");
+        };
+
+        
+    })
+}
+
+function Validator(options){
+    var formElement = document.querySelector(options.form);
+    if(formElement){
+        // submit form
+        // formElement.onsubmit = function(e){
+        //     e.preventDefault();
+        //     options.rules.forEach(function(rule){
+        //         var inputElements = formElement.querySelectorAll(rule.selector);
+        //         validator(formElement, inputElements, rule);
+        //     });
+        // };
+        options.rules.forEach(function(rule){
+            var inputElements = formElement.querySelectorAll(rule.selector);
+            validator(formElement, inputElements, rule)
+        })
+    }
+};
+
+Validator.isRequired = function(selector){
+    return {
+        selector : selector,
+        test : function(value){
+            return value.trim() ? undefined : true;
+        }
+    };
+};
+
+
+Validator.isEmail = function(selector){
+    return {
+        selector : selector,
+        test : function(value){
+            var regix= /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
+            return regix.test(value) ? undefined : "Vui lòng nhập đúng định dạng email";
+        }
+    };
+};
+
+
+
+Validator({
+    form: '#my-form',
+    rules: [
+        Validator.isRequired(".isrequired"),
+        Validator.isEmail("#email"),
+    ]
+});
+
 
 
 

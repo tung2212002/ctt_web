@@ -375,7 +375,7 @@
                             <span>THÔNG TIN SINH VIÊN</span><span id="editForm"><img id="checkbox" src=".\icon\checkbox.png" alt="" title="Thay đổi thông tin"></span>
                             <p id="inputfile"></p>
                             <span class="btn-form form submit" >
-                                <button type="submit" id="btnOK" onclick="event.preventDefault();">&lt; OK &gt;</button>    
+                                <button type="submit" id="btnOK" >&lt; OK &gt;</button>    
                                 <button id="btnhref" type="button" >&lt; Cancel &gt;</button>
                                 <button id="btnup" type="button" >&lt; Reset &gt;</button>
                             </span>
@@ -384,15 +384,15 @@
                                 <div class="img">
                                     <img src=".\icon\avata.png" alt="" id="myAvatar">
                                     <div class = "MSSV form">
-                                        <p class = "MSSV "><strong>MSSV:</strong><input type="number" value="20204619" name="mssv" id="mssv"><p><button type="button" id="choose-avatar-button" >Update</button></p>
+                                        <p class = "MSSV "><strong>MSSV:</strong><input type="number" value="" name="mssv" id="mssv"><p><button type="button" id="choose-avatar-button" >Update</button></p>
                                     </div>
                                 </div>
                                 <div class="col1-infor col form">
-                                    <label>Họ và tên&emsp;: </label><input type="text" value="Ong Thế Tùng1" id="name" name="name"><br>
-                                    <label>Năm vào trường&emsp;: </label><input type="number" value="2020" id="yearschool", name="yearschool"><br>
-                                    <label>Bậc đào tạo&emsp;: </label><input type="text" value="Đại học đại trà" id="edulv" name="edulv"><br>
-                                    <label>Chương trình&emsp;: </label><input type="text" value="Khoa học máy tính 2020" id="edupro" name="edupro"><br>
-                                    <label>Khoa/Viện quản lý &emsp;: </label>
+                                    <label for="name">Họ và tên&emsp;: </label><input type="text" id="name" name="name"><br>
+                                    <label for="edulv">Bậc đào tạo&emsp;: </label><input type="text" id="edulv" name="edulv"><br>
+                                    <label for="yearschool">Năm vào trường&emsp;: </label><input type="number" id="yearschool", name="yearschool"><br>
+                                    <label for="edupro">Chương trình&emsp;: </label><input type="text" id="edupro" name="edupro"><br>
+                                    <label for="fac">Khoa/Viện quản lý &emsp;: </label>
                                         <select name="fac" id="fac"><option value="cntt">Trường Công nghệ Thông tin và Truyền thông</option>
                                                                     <option value="ddt">Trường Điện - Điện tử</option>
                                                                     <option value="ck">Trường Cơ khí</option>
@@ -416,14 +416,17 @@
                                                                     <option value="khqp">Khoa Giáo dục quốc phòng</option>
                                                                     <option value="ggtc">Khoa Giáo dục thể chất</option>
                                         </select><br>
-                                    <label>Tình trạng học tập&emsp;: </label><input type="text" value="Học" id="staschool" name="staschool"><br>
+                                    <label for="staschool">Tình trạng học tập&emsp;: </label><input type="text" id="staschool" name="staschool"><br>
                                 </div>
                                 <div class="col2-infor col form">
-                                    <label>Giới tính&emsp;: </label>
+                                    <label for=sex"">Giới tính&emsp;: </label>
                                         <select name="sex" id="sex"><option value="nam">Nam</option><option value="nu">Nữ</option></select><br>
-                                    <label>Lớp&emsp;: </label><input type="text" value="Khoa học Máy tính 06-K65" id="class" name="class"><br>
-                                    <label>Khóa học&emsp;: </label><input type="number" value="65" id="course" name="course"><br>
-                                    <label>Email&emsp;: </label><input for="email" value="tung.ot204619@sis.hust.edu.vn" id="email" name="email"><br>
+                                    <label for="class">Lớp&emsp;: </label><input type="text" id="class" name="class"><br>
+                                    <label for="course">Khóa học&emsp;: </label><input type="number" id="course" name="course"><br>
+                                    <label for="email">Email&emsp;: </label><input for="email" id="email" name="email">
+                                    <small for="email"></small>
+                                    <br>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -434,15 +437,15 @@
                             <hr>
                             <div class="study-detail">
                                 <div class="col1-study col form">
-                                    <label>Tổng kết học kỳ&emsp;: </label>  <input type="text" value="20212" id="datecpa" name="datecpa"><br>
-                                    <label>Trung bình tích lũy&emsp;: </label>  <input type="text" value="0.00" id="cpa" name="cpa"><br>
-                                    <label>Số tín chỉ nợ đăng ký&emsp;: </label>    <input type="number" value="0" id="dept" name="dept"><br>
+                                    <label for="datecpa">Tổng kết học kỳ&emsp;: </label>  <input type="text" id="datecpa" name="datecpa"><br>
+                                    <label for="cpa">Trung bình tích lũy&emsp;: </label>  <input type="text" id="cpa" name="cpa"><br>
+                                    <label for="dept">Số tín chỉ nợ đăng ký&emsp;: </label>    <input type="number" id="dept" name="dept"><br>
                                 
                                 </div>
                                 <div class="col2-study col form">
-                                    <label>Số tín chỉ tích lũy&emsp;: </label>  <input type="number" value="64" id="acc" name="acc"><br>
-                                    <label>Trình độ sinh viên&emsp;: </label>   <input type="number" value="3" id="stulv" name="stulv"><br>
-                                    <label>Mức cảnh báo&emsp;: </label> <input type="text" value="M0" id="warnlv" name="warnlv"><br>
+                                    <label for="acc">Số tín chỉ tích lũy&emsp;: </label>  <input type="number" id="acc" name="acc"><br>
+                                    <label for="stulv">Trình độ sinh viên&emsp;: </label>   <input type="number" id="stulv" name="stulv"><br>
+                                    <label for="warnlv">Mức cảnh báo&emsp;: </label> <input type="text" value="M0" name="warnlv"><br>
                                     </div>
                             </div>
                         </div>
@@ -452,29 +455,29 @@
                             <hr>
                             <div class="study-detail">
                                 <div class="col1-study col form">
-                                    <label>Dân tộc&emsp;: </label><input type="text" value="KINH" id="nation" name="nation"><br>
-                                    <label>Năm TN cấp 3&emsp;: </label><input type="number" value="2020" id="grad3" name="grad3"><br>
-                                    <label>Địa chỉ&emsp;: </label><input type="text" value="CẢNH THỤY, HUYỆN YÊN DŨNG, TỈNH BẮC GIANG" id="addr" name="addr"><br>
-                                    <label>Số CMTND&emsp;: </label><input type="text" value="122450533" id="cmt" name="cmt"><br>
-                                    <label>Nơi cấp&emsp;: </label><input type="text" value="BẮC GIANG" id="addcmt" name="addcmt"><br>
-                                    <label>Họ tên bố&emsp;: </label><input type="text" id="farther" name="farther"><br>
-                                    <label>Năm sinh&emsp;: </label><input type="text" id="birthfa" name="birthfa"><br>
-                                    <label>Nghề nghiệp&emsp;: </label><input type="text" id="jobja" name="jobja"><br>
-                                    <label>Điện thoại&emsp;: </label><input type="text" id="phonefa" name="phonefa"><br>
-                                    <label>Email&emsp;: </label><input type="text" id="emailfa" name="emailfa"><br>
+                                    <label for="nation">Dân tộc&emsp;: </label><input type="text" id="nation" name="nation"><br>
+                                    <label for="grad3">Năm TN cấp 3&emsp;: </label><input type="number" id="grad3" name="grad3"><br>
+                                    <label for="addr">Địa chỉ&emsp;: </label><input type="text" id="addr" name="addr"><br>
+                                    <label for="cmt">Số CMTND&emsp;: </label><input type="text" id="cmt" name="cmt"><br>
+                                    <label for="addcmt">Nơi cấp&emsp;: </label><input type="text" id="addcmt" name="addcmt"><br>
+                                    <label for="farther">Họ tên bố&emsp;: </label><input type="text" id="farther" name="farther"><br>
+                                    <label for="birthfa">Năm sinh&emsp;: </label><input type="text" id="birthfa" name="birthfa"><br>
+                                    <label for="jobja">Nghề nghiệp&emsp;: </label><input type="text" id="jobja" name="jobja"><br>
+                                    <label for="phonefa">Điện thoại&emsp;: </label><input type="text" id="phonefa" name="phonefa"><br>
+                                    <label for="emailfa">Email&emsp;: </label><input type="text" id="emailfa" name="emailfa"><br>
                                     
                                 </div>
                                 <div class="col2-study col form">
                                 
-                                        <label>Tôn giáo&emsp;: </label><input type="text" value="KHÔNG" id="reli" name="reli"><br>
-                                        <label>Trường THPT&emsp;: </label><input type="text" value="THPT YÊN DŨNG SỐ 1" id="graschool" name="graschool"><br>
-                                        <label>Hộ khẩu&emsp;: </label><input type="text" value="XÃ CẢNH THỤY, HUYỆN YÊN DŨNG, TỈNH BẮC GIANG" id="hh" name="hh"><br>
-                                        <label>Số điện thoại&emsp;: </label><input type="text" id="phone" name="phone"><br>
-                                        <label>Họ tên mẹ&emsp;: </label><input type="text" id="mother" name="mother"><br>
-                                        <label>Năm sinh&emsp;: </label><input type="text" id="birmo" name="birmo"><br>
-                                        <label>Nghề nghiệp&emsp;: </label><input type="text" id="jobmo" name="jobmo"><br>
-                                        <label>Điện thoại&emsp;: </label><input type="text" id="phonemo" name="phonemo"><br>
-                                        <label>Email&emsp;: </label><input for="email" id="emailmo" name="emailmo"><br>
+                                        <label for="reli">Tôn giáo&emsp;: </label><input type="text" id="reli" name="reli"><br>
+                                        <label for="graschool">Trường THPT&emsp;: </label><input type="text"  id="graschool" name="graschool"><br>
+                                        <label for="hh">Hộ khẩu&emsp;: </label><input type="text" id="hh" name="hh"><br>
+                                        <label for="phone">Số điện thoại&emsp;: </label><input type="text" id="phone" name="phone"><br>
+                                        <label for="mother">Họ tên mẹ&emsp;: </label><input type="text" id="mother" name="mother"><br>
+                                        <label for="birmo">Năm sinh&emsp;: </label><input type="text" id="birmo" name="birmo"><br>
+                                        <label for="jobmo">Nghề nghiệp&emsp;: </label><input type="text" id="jobmo" name="jobmo"><br>
+                                        <label for="phonemo">Điện thoại&emsp;: </label><input type="text" id="phonemo" name="phonemo"><br>
+                                        <label for="emailmo">Email&emsp;: </label><input for="email" id="emailmo" name="emailmo"><br>
                                     </div>
                             </div>
                             </div>  

@@ -748,3 +748,8 @@ input:disabled, select:disabled {
     color: black!important;
     font-weight: 100!important;
 }
+
+small{
+    color: red;
+    transform: translateY(110px);
+}
